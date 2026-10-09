@@ -1,0 +1,69 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Python artifacts (if applicable)
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Local databases and data files
+*.sqlite
+*.sqlite3
+*.db
+
+# Test and cache files
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Deployment and hosting local files
+.vercel/
+.netlify/
+
+# Environment-specific configuration
+*.local

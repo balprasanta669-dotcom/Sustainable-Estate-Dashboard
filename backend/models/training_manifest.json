@@ -1,0 +1,53 @@
+{
+  "air_quality_forecaster": {
+    "target": "CPCB Indian AQI",
+    "metrics": {
+      "samples_train": 1114,
+      "samples_val": 279,
+      "r2_score": 0.6263,
+      "mae": 32.43,
+      "rmse": 41.48,
+      "regularization_alpha": 2.5,
+      "trained_at": "2026-10-09T15:23:51.172363"
+    },
+    "artifact": "C:\\Users\\Prasant\\Desktop\\TrafficApp\\backend\\models\\model_aqi_forecast.json"
+  },
+  "energy_forecaster": {
+    "target": "Institutional Campus Load (kW)",
+    "metrics": {
+      "samples_train": 1133,
+      "samples_val": 284,
+      "r2_score": 0.9349,
+      "mae": 37.56,
+      "rmse": 48.81,
+      "regularization_alpha": 1.5,
+      "trained_at": "2026-10-09T15:23:51.197203"
+    },
+    "artifact": "C:\\Users\\Prasant\\Desktop\\TrafficApp\\backend\\models\\model_energy_forecast.json"
+  },
+  "multivariate_anomaly_detector": {
+    "target": "Environmental Sensor Array (PM2.5, PM10, NO2, CO, Temp, RH)",
+    "metrics": {
+      "samples_analyzed": 1441,
+      "features": [
+        "pm25",
+        "pm10",
+        "no2",
+        "co",
+        "temperature_c",
+        "humidity_pct"
+      ],
+      "threshold_percentile": 96.5,
+      "threshold_distance": 3.503,
+      "max_distance": 4.663,
+      "trained_at": "2026-10-09T15:23:51.209451"
+    },
+    "artifact": "C:\\Users\\Prasant\\Desktop\\TrafficApp\\backend\\models\\model_multivariate_anomaly.json"
+  },
+  "training_summary": {
+    "status": "COMPLETED",
+    "duration_seconds": 0.07,
+    "models_trained": 3,
+    "timestamp": "2026-10-09T15:23:51.210665"
+  }
+}

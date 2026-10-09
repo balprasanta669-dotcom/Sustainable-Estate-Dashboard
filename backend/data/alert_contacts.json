@@ -1,0 +1,20 @@
+{
+  "primary_admin": {
+    "name": "Facility Director / Control Room",
+    "phone": "+91 9692440970",
+    "role": "Chief Administrator",
+    "sms_alerts_enabled": true
+  },
+  "electrical_engineer": {
+    "name": "Substation Duty Engineer",
+    "phone": "+91 91234 56789",
+    "role": "Power & DG Systems",
+    "sms_alerts_enabled": true
+  },
+  "safety_head": {
+    "name": "Emergency Response Officer",
+    "phone": "+91 99887 76655",
+    "role": "Fire & Incident Safety",
+    "sms_alerts_enabled": true
+  }
+}

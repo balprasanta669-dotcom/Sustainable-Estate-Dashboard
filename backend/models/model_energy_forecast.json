@@ -1,0 +1,62 @@
+{
+  "model_type": "RidgeForecaster",
+  "alpha": 1.5,
+  "lags": [
+    1,
+    2,
+    3,
+    24
+  ],
+  "feature_names": [
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "total_consumption_kw_lag_1",
+    "total_consumption_kw_lag_2",
+    "total_consumption_kw_lag_3",
+    "total_consumption_kw_lag_24"
+  ],
+  "intercept": 370.3633804060018,
+  "weights": {
+    "hour_sin": 24.71637573945058,
+    "hour_cos": -20.33791420629111,
+    "dow_sin": 10.819456823579841,
+    "dow_cos": 2.553555729517478,
+    "total_consumption_kw_lag_1": 155.8173035048167,
+    "total_consumption_kw_lag_2": 27.51443426393207,
+    "total_consumption_kw_lag_3": -24.74401097123874,
+    "total_consumption_kw_lag_24": 13.436845486481156
+  },
+  "scaler": {
+    "mean": {
+      "hour_sin": -0.00397615519642466,
+      "hour_cos": 0.0010654075738627396,
+      "dow_sin": -0.00440162577068541,
+      "dow_cos": 0.03299626253478531,
+      "total_consumption_kw_lag_1": 370.72744924977934,
+      "total_consumption_kw_lag_2": 371.09146513680497,
+      "total_consumption_kw_lag_3": 371.3417034421889,
+      "total_consumption_kw_lag_24": 370.26992056487205
+    },
+    "std": {
+      "hour_sin": 0.7081034731076442,
+      "hour_cos": 0.7060967035424048,
+      "dow_sin": 0.7144694407667114,
+      "dow_cos": 0.6988743226265279,
+      "total_consumption_kw_lag_1": 191.79843583872233,
+      "total_consumption_kw_lag_2": 191.9999173964559,
+      "total_consumption_kw_lag_3": 192.20112800665956,
+      "total_consumption_kw_lag_24": 191.9477891105621
+    }
+  },
+  "metrics": {
+    "samples_train": 1133,
+    "samples_val": 284,
+    "r2_score": 0.9349,
+    "mae": 37.56,
+    "rmse": 48.81,
+    "regularization_alpha": 1.5,
+    "trained_at": "2026-10-09T15:23:51.197203"
+  }
+}
